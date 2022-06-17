@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container-donuts-form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#donuts-form div.order-field {
+    width: 100%;
+    display: flex;
+    background-color: antiquewhite;
+    height:auto;
+}

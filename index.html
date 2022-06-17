@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="./script.js" defer=""></script>
+</head>
+<body>
+    <!-- Ebook: Head First Javascript - Exercise: Duncan's Just in Time Donuts-->
+    <div id="container-donuts-form">
+        <h2>Duncan's Just-In-Time Donuts</h2>
+        <p>All donuts 50 cents each, cake or glazed</p>
+        <form action="" id="donuts-form" name="order-form" method="POST">
+        <div class="order-field">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" value="">
+        </div>
+        <div class="order-field">
+            <label for="cakedonuts"># of cake donuts: </label>
+            <input type="text" id="cakedonuts" name="cakedonuts" value="" onchange="updateOrder()">
+        </div>
+        <div class="order-field">
+            <label for="glazeddonuts"># of glazed donuts: </label>
+            <input type="text" id="glazeddonuts" name="glazeddonuts" value="" onchange="updateOrder()">
+        </div>
+        <div class="order-field">
+            <label for="pickupminute">Minutes 'till pickup: </label>
+            <input type="text" id="pickupminute" name="pickupminute" value="">
+        </div>
+        <div class="order-field">
+            <label for="subtotal">Subtotal: </label>
+            <input type="text" id="subtotal" name="subtotal" value="" readonly="readonly">
+        </div>
+        <div class="order-field">
+            <label for="tax">Tax: </label>
+            <input type="text" id="tax" name="tax" value="" readonly="readonly">
+        </div>
+        <div class="order-field">
+            <label for="total">Total: </label>
+            <input type="text" id="total" name="total" value="" readonly="readonly">
+        </div>
+        <div class="order-field">
+            <input type="button" value="Place Order" onclick="placeOrder(this.form)">
+        </div>
+        </form>
+    </div>
+    
+</body>
+</html>
